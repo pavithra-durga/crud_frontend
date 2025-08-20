@@ -46,8 +46,6 @@ const BASE_URL = 'http://localhost:8081';
     setProduct(p);
     setIsEditing(true);
   };
-
-  /*
   const deleteProduct = async (id) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       await axios.delete(`${BASE_URL}/delete/${id}`);
@@ -55,7 +53,7 @@ const BASE_URL = 'http://localhost:8081';
       fetchProducts();
     }
   };
-  */
+  
 
   useEffect(() => {
     fetchProducts();
@@ -168,14 +166,14 @@ const BASE_URL = 'http://localhost:8081';
                 >
                   Edit
                 </button>
-                {/*
+                {
                 <button
                   className="btn btn-danger btn-sm"
                   onClick={() => deleteProduct(p.id)}
                 >
                   Delete
                 </button>
-                */}
+                }
               </td>
             </tr>
           ))}
